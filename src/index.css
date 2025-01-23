@@ -13,6 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  width: 100vw;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -65,4 +69,29 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* Make pagination bullets into lines */
+.swiper-pagination-bullet {
+  width: 30px;
+  /* Line width */
+  height: 4px;
+  /* Line height */
+  border-radius: 0;
+  /* Remove rounded corners */
+  background-color: #999;
+  /* Default line color */
+  margin: 0 8px;
+  /* Space between lines */
+}
+
+/* Style the active pagination line */
+.swiper-pagination-bullet-active {
+  background-color: #000;
+  /* Active line color */
 }

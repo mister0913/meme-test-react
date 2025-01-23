@@ -29,11 +29,17 @@ function App() {
           display: "flex",
           flexDirection: "column",
           minHeight: "100vh",
-          width:1
+          width: 1,
         }}
       >
         <Header />
-        <Box component="main" sx={{ flexGrow: 1 }}>
+        <Box
+          component="main"
+          display="flex"
+          justifyContent="center"
+          width={1}
+          sx={{ flexGrow: 1 }}
+        >
           <Home />
         </Box>
         <Footer />
