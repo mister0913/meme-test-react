@@ -3,5 +3,16 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "typeRoots": ["node_modules/@types"],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "swiper/css": ["./node_modules/swiper/swiper.min.css"],
+      "swiper/css/pagination": ["./node_modules/swiper/modules/pagination/pagination.min.css"]
+    }
+  }
 }
